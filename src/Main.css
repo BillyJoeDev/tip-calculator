@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+    --primary-200: hsl(172, 67%, 45%);
+    --neutral-100: hsl(0, 0%, 100%);
+    --neutral-200: hsl(189, 41%, 97%);
+    --neutral-300: hsl(185, 41%, 84%);
+    --neutral-400: hsl(184, 14%, 56%);
+    --neutral-500: hsl(186, 14%, 43%);
+    --neutral-600: hsl(183, 80%, 24%);
+    --neutral-700: hsl(183, 100%, 15%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    color: var(--neutral-100);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::placeholder {
+    color: var(--neutral-700);
+    opacity: 0.4;
+}
+
+body { 
+    background: var(--neutral-300);
+}
+
+input {
+    border: none;
+    text-align: right;
+    background-color: #f1f6fa;
+    color: var(--neutral-700);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 45%;
+    background-color: var(--neutral-100);
+    border-radius: 30px;
+}
+
+.left-flex, .right-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 47%;
+    border-radius: 20px;
+}
+
+.left-flex {
+    align-items: flex-start;
+}
+
+.left-bill-container {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.left-bill-container h1, .left-selecttip-container h1, .left-peoplecount-container h1 {
+    color: var(--neutral-500);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.left-bill-container input {
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: .25rem .75rem .25rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.left-bill-container input:focus {
+    outline: none;
+}
+.left-selecttip-container {
+    width: 100%;
+}
+
+.tip-button {
+    cursor: pointer;
+    background-color: var(--neutral-700);
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: var(--neutral-100);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 5px 5px 5px;
+}
+
+.tip-button:hover {
+    background-color: var(--primary-200);
+    color: var(--neutral-700);
+}
+
+.left-tipbuttons-container {
+    width: 95%;
+}
+
+.left-tipbuttons-container input {
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--neutral-700);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.left-tipbuttons-container {
+    margin-bottom: 1.5rem;
+}
+
+.left-peoplecount-container {
+    width: 95%;
+}
+
+.left-peoplecount-container input {
+    width: 95%;
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: .25rem .75rem .25rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.right-flex {
+    background-color: var(--neutral-700);
+}
+
+.right-item-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 55%;
+}
+
+.right-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.right-item p {
+    font-size: 40px;
+    color: var(--primary-200);
+}
+
+.right-header h1 {
+    font-size: 15px;
+}
+
+.right-header p {
+    color: var(--neutral-400);
+    font-size: 13px;
+}
+
+.right-item-container button {
+    position: absolute;
+    bottom: -160px;
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--neutral-600);
+    color:var(--neutral-400);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right-item-container.active {
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--primary-200);
+    color: var(--neutral-800);
+}
